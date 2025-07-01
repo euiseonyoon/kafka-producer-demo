@@ -25,6 +25,17 @@ repositories {
 }
 
 dependencies {
+	// Kafka
+	implementation("org.springframework.kafka:spring-kafka")
+	// Kafka 메시지를 Jackson 기반 JSON직렬화
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+
+	// WebSocket Client
+	implementation("com.squareup.okhttp3:okhttp:4.12.0")
+
+	// Kotlin Coroutine
+	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+
 	implementation("org.springframework.boot:spring-boot-starter")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	compileOnly("org.projectlombok:lombok")
